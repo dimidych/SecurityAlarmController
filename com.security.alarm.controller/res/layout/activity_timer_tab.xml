@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimerTabActivity" >
+
+    <TextView
+        android:id="@+id/lblTimerCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblTimerCost"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tomato" />
+
+    <TextView
+        android:id="@+id/lblAlarmZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblAlarmZone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Spinner
+        android:id="@+id/cmbAlarmZone"
+        android:layout_height="38dp" 
+        android:layout_width="match_parent" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp" />
+    
+    <TextView
+        android:id="@+id/lblArmTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblArmTimer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtArmTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="time" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblDisarmTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblDisarmTimer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtDisarmTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="time" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblSwitchTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblSwitchTimer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtSwitchTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="time" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave_Click"
+            android:text="@string/btnSave" />
+    
+</LinearLayout>

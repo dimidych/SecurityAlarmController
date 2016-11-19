@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- main activity -->
+    <string name="app_name">Security controller</string>
+    <string name="menu_settings">Настройки</string> 
+    <string name="title_activity_main">Security controller</string>
+    <string name="mnuAbout">О проге..</string>
+    <string name="mnuExit">Выход</string>
+    <string name="mnuSaveSettings">Сохранить настройки</string>
+    <string name="mnuLoadSettings">Загрузить настройки</string>
+
+    <!-- main tab activity -->
+    <string name="title_activity_main_tab">Security controller</string>
+    <string name="lblMainCost">*Стоимость операции - 1смс</string>
+    <string name="btnArm">Поставить на охрану</string>
+    <string name="btnPowerSafeArm">Охрана в энергосберегающем режиме</string>
+    <string name="btnDisarm">Снять с охраны</string>
+    <string name="btnStatus">Опросить</string>
+    <string name="btnTrySiren">Опробовать сирену</string>
+    
+    <!-- setting tab activity -->
+    <string name="title_activity_settings_tab">Security controller</string>
+    <string name="lblSettingsCost">*Стоимость операции - 2смс</string>
+    <string name="lblOprPhone">Телефон центрального блока</string>
+    <string name="lblOldPrgPwd">Старый программный пароль</string>
+    <string name="lblOprPwd">Операционный пароль</string>
+    <string name="lblPrgPwd">Программный пароль</string>
+    <string name="btnSave">Сохранить</string>
+    
+    <!-- phone tab activity -->
+    <string name="title_activity_phone_tab">Security controller</string>
+    <string name="lblPhoneCost">*Стоимость операции - 9смс</string>
+    <string name="lblTel1">Тел1 :</string>
+    <string name="lblTel2">Тел2 :</string>
+    <string name="lblTel3">Тел3 :</string>
+    <string name="lblTel4">Тел4 :</string>
+    <string name="lblTel5">Тел5 :</string>
+    <string name="lblTel6">Тел6 :</string>
+    <string name="lblSms7">Смс7 :</string>
+    <string name="lblSms8">Смс8 :</string>
+    <string name="lblSms9">Смс9 :</string>
+    
+    <!-- timer tab activity -->
+    <string name="title_activity_timer_tab">Security controller</string>
+    <string name="lblTimerCost">*Стоимость операции - 4смс</string>
+    <string name="lblAlarmZone">Охранная зона</string>
+    <string name="lblArmTimer">Время постановки на охрану</string>
+    <string name="lblDisarmTimer">Время снятия с охраны</string>
+    <string name="lblSwitchTimer">Время вкл/откл внешнего питания</string>
+    
+    <!-- siren tab activity -->
+    <string name="title_activity_siren_tab">Security controller</string>
+    <string name="lblSirenCaution">Звук при вкл/откл охраны</string>
+    <string name="lblSirenTime">Время звучания сирены (минут)</string>
+    <string name="lblSirenVolume">Громкость сирены</string>
+
+    <!-- about dialog fragment -->
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="titleAbout">iBook - Контакты</string>
+	<string name="btnOk">Закрыть</string>
+	<string name="lblAuthor">Автор : Кожомин Дмитрий</string>
+	<string name="lblEmail">dimidych@gmail.com</string>
+	<string name="lblEula">Все права защищены</string>
+	
+</resources>

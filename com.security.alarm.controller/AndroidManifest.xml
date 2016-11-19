@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.security.alarm.controller"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.security.alarm.controller.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.security.alarm.controller.MainTabActivity"
+            android:label="@string/title_activity_main_tab" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.security.alarm.controller.SettingsTabActivity"
+            android:label="@string/title_activity_settings_tab" >
+        </activity>
+        <activity
+            android:name="com.security.alarm.controller.PhoneTabActivity"
+            android:label="@string/title_activity_phone_tab" >
+        </activity>
+        <activity
+            android:name="com.security.alarm.controller.TimerTabActivity"
+            android:label="@string/title_activity_timer_tab" >
+        </activity>
+        <activity
+            android:name="com.security.alarm.controller.SirenTabActivity"
+            android:label="@string/title_activity_siren_tab" >
+        </activity>
+        <activity
+            android:name="com.ibook.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="android.support.v4.app.FragmentActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.FragmentActivity" />
+        </activity>
+        <receiver android:name=".SmsReceiverCls">   
+		    <intent-filter>
+		        <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+		    </intent-filter>
+ 		</receiver>
+    </application>
+
+</manifest>

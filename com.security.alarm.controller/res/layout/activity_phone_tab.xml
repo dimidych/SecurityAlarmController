@@ -1,0 +1,420 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/scrollView1"
+    tools:context=".PhoneTabActivity" >
+
+    <LinearLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    
+    <TextView
+        android:id="@+id/lblPhoneCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblMainCost"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tomato" />
+    
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblTel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblTel1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtTel1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave1_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel1_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblTel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblTel2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtTel2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave2_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel2_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblTel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblTel3"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtTel3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave3_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel3_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblTel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblTel4"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtTel4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave4_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel4_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblTel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblTel5"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtTel5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave5_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel5_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblTel6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblTel6"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtTel6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave6_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel6_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblSms7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblSms7"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtSms7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave7_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel7_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblSms8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblSms8"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtSms8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave8_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel8_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/lblSms9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/lblSms9"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/txtSms9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:layout_marginRight="2dp"
+	        android:inputType="number" >
+	        <requestFocus />
+	    </EditText>
+	    
+	    <Button
+            android:id="@+id/btnSave9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave9_Click"
+            android:text="" />
+	    
+	    <Button
+            android:id="@+id/btnDel9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDel9_Click"
+            android:text="" />
+	    
+	</LinearLayout>
+	</LinearLayout>
+</ScrollView>

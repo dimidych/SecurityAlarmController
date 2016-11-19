@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SirenTabActivity" >
+
+    <TextView
+        android:id="@+id/lblSirenCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblMainCost"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tomato" />
+
+    <TextView
+        android:id="@+id/lblSirenCaution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblSirenCaution"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Switch
+        android:id="@+id/swcSirenCaution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lblSirenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblSirenTime"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	    
+    <SeekBar
+        android:id="@+id/sbrSirenTime"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:max="9"  />
+
+    <TextView
+        android:id="@+id/lblSirenTimeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+	</LinearLayout>
+	
+    <TextView
+        android:id="@+id/lblSirenVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblSirenVolume"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+	    android:orientation="horizontal" >
+	    
+    <SeekBar
+        android:id="@+id/sbrSirenVolume"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:max="9" />
+
+    <TextView
+        android:id="@+id/lblSirenVolumeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnSave_Click"
+            android:text="@string/btnSave" />
+
+</LinearLayout>

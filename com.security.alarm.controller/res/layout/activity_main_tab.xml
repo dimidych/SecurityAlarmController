@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainTabActivity" >
+
+    <TextView
+        android:id="@+id/lblMainCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/lblMainCost"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tomato" />
+    
+    <Button
+            android:id="@+id/btnArm"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/quarantine"
+            android:onClick="btnArm_Click"
+            android:text="@string/btnArm" />
+    
+    <Button
+            android:id="@+id/btnPowerSafeArm"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/standby"
+            android:onClick="btnPowerSafeArm_Click"
+            android:text="@string/btnPowerSafeArm" />
+    
+    <Button
+            android:id="@+id/btnDisarm"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/cancel"
+            android:onClick="btnDisarm_Click"
+            android:text="@string/btnDisarm" />
+    
+    <Button
+            android:id="@+id/btnStatus"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/statinfo"
+            android:onClick="btnStatus_Click"
+            android:text="@string/btnStatus" />
+    
+    <EditText
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:editable="false" >
+
+        <requestFocus />
+    </EditText>
+    
+</LinearLayout>

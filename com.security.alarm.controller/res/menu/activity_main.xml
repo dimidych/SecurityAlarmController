@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mnuSaveSettings"
+        android:title="@string/mnuSaveSettings"
+        android:icon="@drawable/folder_open"
+        android:showAsAction="never"
+        android:orderInCategory="3"
+    />
+    
+    <item
+        android:id="@+id/mnuLoadSettings"
+        android:title="@string/mnuLoadSettings"
+        android:icon="@drawable/folder_up"
+        android:showAsAction="never"
+        android:orderInCategory="3"
+    />
+    
+    <item
+        android:id="@+id/mnuAbout"
+        android:title="@string/mnuAbout"
+        android:icon="@drawable/statinfo"
+        android:showAsAction="never"
+        android:orderInCategory="3"
+    />
+    
+    <item
+        android:id="@+id/mnuExit"
+        android:title="@string/mnuExit"
+        android:icon="@drawable/cli_aim"
+        android:showAsAction="never"
+        android:orderInCategory="4"
+    />
+
+</menu>

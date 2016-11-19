@@ -1,0 +1,7 @@
+*.iml
+/.settings
+/bin
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
